@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"defer></script>
+    <title>Discount Calculator</title>
+  </head>
+  <body>
+    <div class="one">
+    <h1>Discount Calculator</h1>
+    <form>
+      <!--crea label para que el usuario meta datos, escribe luego que datos-->
+      <label for="amount">Enter bill amount:</label><input type="text" id="amount" />
+      <br /><br>
+
+      <label for="discount-percentage">Select discount %</label><select name="percentage" id="discount-percentage">
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+        <option value="40">40</option>
+        <option value="50">50</option>
+      </select>
+      <br><br>
+
+      <label for="discount-amount"> Discount amout: </label><input type="text" id="discount-amount" disabled />
+      <br><br>
+
+      <label for="pay">Final pay:</label><input type="text" id="pay" disabled />
+      <br><br>
+
+      <button type="submit" class="calculate">Calculate</button>
+      
+      <input type="reset" value="Reset" class="reset" />
+    </form>
+
+    </div>
+  </body>
+</html>

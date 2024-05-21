@@ -1,0 +1,32 @@
+import csv
+
+def calculate_average(csv_file, column_name):
+    with open(csv_file, 'r', newline='') as file:
+        reader = csv.DictReader(file)
+        total_sum = 0
+        total_count = 0
+
+        for row in reader:
+            if column_name in row:
+                try:
+                    value = float(row[column_name])
+                    total_sum += value
+                    total_count += 1
+                except ValueError:
+                    pass
+
+        if total_count > 0:
+            average = total_sum / total_count
+            return average
+        else:
+            return None
+
+# Provide the path to your CSV file and the column name for which you want to calculate the average
+#csv_file_path = "path/to/your/csv/file.csv"
+column_to_average = "column_name"
+
+average = calculate_average(csv_file_path, column_to_average)
+if average is not None:
+    print(f"The average of '{column_to_average}' is: {average:.2f}")
+else:
+    print(f"No valid data found in the '{column_to_average}' column.")

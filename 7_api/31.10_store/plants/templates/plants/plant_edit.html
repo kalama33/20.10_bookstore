@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Edit plant</h1>
+
+<form method="post">{% csrf_token %}
+{{ form.as_p }}
+<div>
+<button type="submit">Save</button>
+<button href="{% url 'plant-detail' plant.pk %}">Cancel</button>
+</div>
+</form>
+{% endblock %}

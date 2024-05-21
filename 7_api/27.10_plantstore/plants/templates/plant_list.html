@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plant's List</title>
+</head>
+<body>
+    <h1>Plant's List</h1>
+    <ul>
+        {% for plant in plant_list %}
+            <li>
+                <strong>{{ plant.name }}</strong><br>
+                Family: {{ plant.family }}<br>
+                Origin: {{ plant.origin }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

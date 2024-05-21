@@ -1,0 +1,52 @@
+/* Basic Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #ff0099; /* Pink color for header */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#logo {
+    width: 30vw; /* Adjust as needed */
+    height: auto;
+}
+
+main {
+    padding: 60px;
+    color: black;
+    text-align: center;
+    padding: 60px 0;
+    ;
+}
+
+footer {
+    background-color: #333; /* Dark footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 100px; 
+}

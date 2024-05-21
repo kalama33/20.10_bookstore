@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Page</title>
+</head>
+<body>
+    <h1>Task 1: For Loop and If Tag</h1>
+    <ul>
+
+        {% for number in list_of_numbers %}
+            <li {% if number|divisibleby:2 %}color:blue;{% else %}color:red;{% endif %}">{{ number }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Task 2: String Filters</h1>
+    <p>Uppercase Greeting: {{greeting|upper}}</p>
+    <p>Reversed Greeting: {{greeting|reverse}}</p>
+
+    <h1>Task 3: Dictionary and String Concatenation</h1>
+    <p>Full Name: {{ user_info.first_name}} - {{ user_info.last_name}}</p>
+
+    <h1>Task 4: Conditional Display</h1>
+    {%if is_vip%}
+        <p><strong>Vip Member</strong></p>
+    {% else %}
+        <p>Regular Member</p>
+    {%endif % 
+    
+    <h1>Task 5: Safe Filter</h1>
+    <p>Notes without Safe Filter: {{notes}}</p>
+    <p>Notes with Safe Filter: {{notes|safe }}</p>
+
+    <h1>Bonus Date</h1>}
+    <p>{{ "now"|date:"F d, Y"}}</p>
+
+</body>
+</html>

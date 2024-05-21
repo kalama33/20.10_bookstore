@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+{% for profile in profile_list %}
+<div class="profile-entry">
+
+    <h2><a href="{{ profile.get_absolute_url }}">{{ profile.user_name }}</a></h2> </-- new -->
+
+<p>{{ profile.pet_name }}</p>
+</div>
+{% endfor %}
+{% endblock content %}

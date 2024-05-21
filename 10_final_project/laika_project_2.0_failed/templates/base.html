@@ -1,0 +1,33 @@
+{% load static %} <!-- Carga la etiqueta para archivos estáticos de Django -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laika - Connect with Fellow Dog Owners</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- Usa la etiqueta static para enlazar CSS -->
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="{% url 'landing' %}">Home</a></li>
+                <li><a href="{% url 'pet-list' %}">Pets</a></li>
+                <li><a href="{% url 'pet-create' %}">Create Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- El contenido principal de la página -->
+        {% block content %}
+        <!-- Bloque de contenido que pueden sobrescribir las plantillas hijas -->
+        {% endblock %}
+        <img src="{% static 'css/laika_logo.png' %}" alt="Laika Logo" id="logo"> <!-- Usa la etiqueta static para la imagen -->
+    </main>
+    <footer>
+        <p>&copy; 2023 Laika - Your Canine Community</p>
+    </footer>
+</body>
+</html>

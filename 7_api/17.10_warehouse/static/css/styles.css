@@ -1,0 +1,14 @@
+body {
+	font-family: Arial, sans-serif;
+	padding: 20px;
+	background-image: url('/path/to/file.jpg');
+	background-size: cover;
+}
+
+.navbar {
+	background-color: rgba(104, 179, 0, 0.3);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{ plant.title }}</h1>
+<p>{{ plant.description }}</p>
+<p><strong> €{{ plant.price }}</strong></p>
+
+{% if user.is_staff %}
+	<a href="{% url 'plant-edit' plant.pk %}">Edit</a>
+	<a href="{% url 'plant-delete' plant.pk %}">Delete</a>
+{% endif %}
+{% endblock %}
+
+{% endblock %}

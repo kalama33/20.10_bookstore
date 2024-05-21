@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css_travel_reservation.css" />
+  <title>HTML CSS Form exercise</title>
+</head>
+
+<body>
+
+  <div class="Sign-up-form">
+  
+  <h1>Book now your ticket to MARS</h1>
+  
+  <form id="registration_form" method="POST">
+
+    <label>Full name*:</label><br><br>
+    
+    <input type="text" class="input-box" name="full_name" placeholder="Your name"><br><br>
+    
+    <label>Email address*:</label><br><br>
+    
+    <input type="text" class="input-box" name="email_addr" placeholder="Terrestrial address"><br><br>
+
+    <label>Select tour* :</label><br><br>
+    
+    <select name="tours" class="input-box" >
+      <option value="Tharsis Rise">Tharsis Rise</options>
+      <option value="Utopia Basin">Utopia Basin</options>
+      <option value="Olympus Mons">Olympus Mons</options>
+    <br><br>
+    
+  </select><br><br>
+    
+  <label>Arrival date*:</label><br><br>
+    
+    <input type="date" class="input-box"><br><br>
+    
+    <label>Number of persons*:</label><br><br>
+
+    <input type="text" class="input-box" name="persons" value="" s><br><br>
+   
+    <label>Which service do you prefer?*</label> <br><br>
+
+    Boarding.........    <input type="checkbox" name="facilities[]" value="boarding"><br>
+    Fooding..........    <input type="checkbox" name="facilities[]" value="fooding"><br>
+    Sight seeing...    <input type="checkbox" name="facilities[]" value="sightseeing"><br><br>
+    
+    <label>Terms and conditions*</label><br><br>
+    
+    <input type="radio" name="tnc" value="agree" checked>I agree
+    <input type="radio" name="tnc" value="disagree">I disagree<br><br>
+    
+    <button type="submit" class= "button" name="submit">Complete </button><br><br>
+
+    <footer> Total Recall 2030  </footer> 
+  
+  </form>
+
+</div>
+
+  </body>
+  
+</html>

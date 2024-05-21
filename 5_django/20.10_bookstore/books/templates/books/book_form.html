@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>{% if form.instance.pk %}Edit Book{% else %}Create Book{% endif %}</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+  </form>
+  <a href="{% if form.instance.pk %}{% url 'book_detail' form.instance.pk %}{% else %}{% url 'book_list' %}{% endif %}">Cancel</a>
+{% endblock %}

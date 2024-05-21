@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Pets</h1>
+
+<div>
+{% for pet in pets %}
+<a href="#">{{ pet.name }}</a> 
+{% endfor %}
+</div>
+
+{% endblock %}

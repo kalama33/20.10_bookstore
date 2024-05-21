@@ -1,0 +1,31 @@
+{% load static %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laika - Connect with Fellow Pet Owners</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}"> <!-- CSS -->
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="{% static 'css/laika_logo.png' %}" alt="Laika Logo" id="logo">
+            <ul>
+                <li><a href="{% url 'home' %}">Profiles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- -->
+        {% block content %}
+        <!-- -->
+        {% endblock %}
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Laika - Your Pet Community</p>
+    </footer>
+</body>
+</html>

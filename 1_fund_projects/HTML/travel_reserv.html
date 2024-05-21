@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel_reservation</title>
+    <link rel="stylesheet" href="css_travel_reservation.css">
+</head>
+
+<body>
+
+<div class="travel_reservation">
+    <h1>Mars travel reservation form</b></h1>
+    <h2>*denotes mandatory</h2>
+
+     <label for="fullname">Full name*:</label><br>
+        <input id="fullname" class="input-box" type="text" placeholder="Your name" required=""><br>
+    
+    <label for="emailaddress"> Email address*</label><br>
+        <input id="emailaddress" class="input-box" type="text" required=""><br>
+    
+    <label for="select tour package">Select Tour Package*:</label><br>
+
+    <p></p>
+    
+    <select>
+        <option value="">Standard</option>
+        <option value="">VIP</option>
+        <option value="">Ordinary</option>
+    </select>
+
+    <p></p>
+    
+
+    <label for="">Arrival date*:</label><br>   
+    <input type="date" class="input-box" id="date" name="date"required><br>
+
+    <label for="numbers of persons">Numbers of persons*:</label><br>
+    <input id= "numbers of persons" class="input-box"type="numbers" name="numbers of persons" required><br>
+
+    <label>Which service do you prefer? </label><br>
+
+    <label for="boarding">Boarding</label>
+    <input type="checkbox" class="input-box"name="service" id="boarding"><br>
+
+    <label for="fooding">Fooding</label>
+    <input type="checkbox" class="input-box"name="service" id="fooding"><br>
+
+    <label for="sight_seeing">Sight_seeing</label>
+    <input type="checkbox" class="input-box"name="service" id="sight_seeing"><br>
+    
+    <label for="coupon_code">Discount Coupon code:<label><br>
+    <input type="text" class="input-box"name="coupon_code" id="coupon_code"><br>
+   
+    <label> Terms and conditions*</label><br>
+
+    <input type= "radio" id="yes" name="agreement" required >
+    <label for="yes">I agree</label>
+
+    <input type= "radio" id="yes" name="agreement" required >
+    <label for="no">I disagree</label>
+
+    <button type="submit" class="sign-btn" Sign upComplete reservation ></button>
+
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,10 @@
+{% load static %}           
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+			               
+
+<nav class="navbar">
+	<a href="{% url 'pet_list' %}">List</a>	
+</nav>
+
+{% block content %}		    
+{% endblock %}
